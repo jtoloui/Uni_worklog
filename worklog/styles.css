@@ -1,0 +1,407 @@
+html {
+  position: relative;
+  min-height: 100%;
+  max-height: 200em;
+}
+body {
+  background: #ecf0f1;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 0 200px;
+}
+
+/*content section start*/
+
+section > p > a:hover {
+  background: #ffff4c;
+  border: 2px solid blue;
+  font-size: 20px;
+}
+section > p > a:link {
+  text-decoration: none;
+  color: #ab3326;
+  font-weight: bold;
+}
+section > p > a:visited {
+  color: #ab3326;
+}
+section > h1 {
+  padding-left: 15%;
+}
+section > p {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+section > hr {
+  max-width: 65%;
+}
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  max-width: 200em;
+  line-height: 130%;
+  padding: 2ex 14% 2ex 13.5%;
+  background: #5d356d;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 .09em .2ex #000;
+}
+footer > p {
+  margin: 0%;
+  padding: 0 2rem 0 2rem;
+  max-width: 40rem;
+}
+footer > p > a:hover {
+  background: #ffff4c;
+  padding: 0 .25em 0 .25em;
+  font-size: 20px;
+}
+footer > p > a:link {
+  text-decoration: none;
+  color: #ab3326;
+  font-weight: bold;
+}
+footer > p > a:visited {
+  color: #ab3326;
+}
+footer > section > p {
+  padding-left: 32px;
+  line-height: 130%;
+  background: #5d356d;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 .09em .2ex #000;
+}
+
+/*content section ends*/
+
+
+/*Nav menu http://cssmenumaker.com/menu/flat-jquery-responsive-menu */
+
+nav, nav ul, nav ul li, nav ul li a, nav #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+nav:after, nav > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+nav #menu-button {
+  display: none;
+}
+nav {
+  width: auto;
+  font-family: 'Open Sans', sans-serif;
+  background: #5d356d;
+}
+#menu-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7px;
+  background: white;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+nav > ul > li {
+  float: left;
+}
+nav.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+nav.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+nav.align-center ul ul {
+  text-align: left;
+}
+nav.align-right > ul > li {
+  float: right;
+}
+nav.align-right ul ul {
+  text-align: right;
+}
+nav > ul > li > a {
+  padding: 20px;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+nav > ul > li:hover > a, nav > ul > li.active > a {
+  color: #5cace2;
+  font-weight: bolder;
+  text-shadow: 0 .1em .6em black;
+}
+nav > ul > li.has-sub > a {
+  padding-right: 25px;
+}
+nav > ul > li.has-sub > a::after {
+  position: absolute;
+  top: 21px;
+  right: 10px;
+  width: 4px;
+  height: 4px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  content: "";
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease;
+  -ms-transition: border-color 0.2s ease;
+  -o-transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease;
+}
+nav > ul > li.has-sub:hover > a::after {
+  border-color: #5d356d;
+}
+nav ul ul {
+  position: absolute;
+  left: -9999px;
+}
+nav li:hover > ul {
+  left: auto;
+}
+nav.align-right li:hover > ul {
+  right: 0;
+}
+nav ul ul ul {
+  margin-left: 100%;
+  top: 0;
+}
+nav.align-right ul ul ul {
+  margin-left: 0;
+  margin-right: 100%;
+}
+nav ul ul li {
+  height: 0;
+  -webkit-transition: height .2s ease;
+  -moz-transition: height .2s ease;
+  -ms-transition: height .2s ease;
+  -o-transition: height .2s ease;
+  transition: height .2s ease;
+}
+nav ul li:hover > ul > li {
+  height: 35px;
+}
+
+/* Sub menu design e.g colour*/
+
+nav ul ul li a {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  width: 160px;
+  font-size: 15px;
+  background: #5d356d;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+nav ul ul li:hover > a, nav ul ul li a:hover {
+  color: #5cace2;
+  font-weight: bolder;
+  text-shadow: 0 .1em .6em black;
+}
+nav ul ul li.has-sub > a::after {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  width: 4px;
+  height: 4px;
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  content: "";
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease;
+  -ms-transition: border-color 0.2s ease;
+  -o-transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease;
+}
+nav.align-right ul ul li.has-sub > a::after {
+  right: auto;
+  left: 10px;
+  border-bottom: 0;
+  border-right: 0;
+  border-top: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+}
+nav ul ul li.has-sub:hover > a::after {
+  border-color: #ffffff;
+}
+
+/*Mobile nav bar*/
+
+@media all and (max-width: 768px) {
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    width: 100%;
+    display: none;
+  }
+  nav.align-center > ul, nav.align-right ul ul {
+    text-align: left;
+  }
+  nav ul li, nav ul ul li, nav ul li:hover > ul > li {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #dedede;
+  }
+  nav ul li a, nav ul ul li a {
+    width: 100%;
+  }
+  nav > ul > li, nav.align-center > ul > li, nav.align-right > ul > li {
+    float: none;
+    display: block;
+  }
+  nav ul ul li a {
+    padding: 20px 20px 20px 30px;
+    font-size: 15px;
+    color: white;
+    background: none;
+  }
+  nav ul ul li.active a {
+    color: #5cace2;
+  }
+  nav ul ul li:hover > a, nav ul ul li a:hover {
+    color: #5cace2;
+  }
+  nav ul ul ul li a {
+    padding-left: 40px;
+  }
+  nav ul ul, nav ul ul ul {
+    position: relative;
+    left: 0;
+    right: auto;
+    width: 100%;
+    margin: 0;
+  }
+  nav > ul > li.has-sub > a::after, nav ul ul li.has-sub > a::after {
+    display: none;
+  }
+  #menu-line {
+    display: none;
+  }
+  nav #menu-button {
+    display: block;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  nav #menu-button::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    width: 15px;
+    height: 2px;
+    background: white;
+  }
+  nav #menu-button::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    display: block;
+    width: 15px;
+    height: 3px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  nav .submenu-button {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    display: block;
+    border-left: 1px solid #dedede;
+    height: 55px;
+    width: 52px;
+    cursor: pointer;
+  }
+  nav .submenu-button::after {
+    content: '';
+    position: absolute;
+    top: 21px;
+    left: 26px;
+    display: block;
+    width: 1px;
+    height: 11px;
+    background: white;
+    z-index: 99;
+  }
+  nav .submenu-button::before {
+    content: '';
+    position: absolute;
+    left: 21px;
+    top: 26px;
+    display: block;
+    width: 11px;
+    height: 1px;
+    background: white;
+    z-index: 99;
+  }
+  nav .submenu-button.submenu-opened:after {
+    display: none;
+  }
+  /* mobile version for the content*/
+  section > hr {
+    max-width: 90%;
+  }
+  section > h1 {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  section > p {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  footer > section > p {
+    padding-left: 32px;
+  }
+  footer {
+    padding: 2ex 0 2ex 0 ;
+    bottom: 0;
+    max-width: 200em;
+  }
+}
